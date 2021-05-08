@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="template1">
+<head>
+<meta charset="UTF-8">
+<title>add new patient</title>
+
+</head>
+<body>
+	<div layout:fragment="pageContent">
+		<div class="container col-md-6">
+			
+
+				<div class="card">
+					<div class="card-header">saved</div>
+
+					<div class="card-body">
+						<div>
+							<label class="control-label">ID:</label> 
+							<strong><label class="control-label" th:text="${patient.id}"></label> </strong>
+						</div>
+						<div>
+							<label class="control-label">name:</label> 
+							<strong><label th:text="${patient.name}"></label></strong>
+						</div>
+						 <div>
+							 <label class="control-label">birth date :</label> 
+							<strong><label th:text="${patient.dateNaissance}"></label> </strong>
+						 </div>
+						<div>
+							<label class="control-label">sick :</label> 
+							<strong><label th:text="${patient.malade}"></label></strong>
+						</div>
+						
+
+					</div>
+				</div>
+
+		</div>
+	</div>
+
+</body>
+</html>
